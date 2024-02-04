@@ -3,7 +3,7 @@ title: Automating cli prompts with Expect
 date: '2024-02-04T10:07:05Z'
 tags: ["automation", "devops", "scripting"]
 author: "Me"
-draft: true
+draft: false
 hidemeta: false
 comments: true
 description: "Using Expect to automate interative cli prompts"
