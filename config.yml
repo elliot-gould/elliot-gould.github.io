@@ -1,0 +1,78 @@
+baseURL: "https://elliot-gould.github.io"
+title: elliot's tech 💻
+theme: PaperMod
+
+enableEmoji: true
+enableInlineShortcodes: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production
+  title: elliot's tech 💻
+  description: "Adventures in tech"
+  assets:
+    favicon: /assets/favicon.png
+
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowShareButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  showtoc: true
+  tocopen: false
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: true
+  hidemeta: false
+  hideSummary: true
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10
+    keys: ["title", "permalink", "summary", "content"]
+
+  homeInfoParams:
+      Title: "Adventures in Tech"
+      Content: 👋 Welcome to my tech blog! A collection of things i've learned and things i'm working on.
+
+  socialIcons:
+    - name: github
+      title: View Source on Github
+      url: "https://github.com/elliot-gould/elliot-gould.github.io/"
+    - name: linkedin
+      title: View my Linkedin Profile
+      url: "https://www.linkedin.com/in/elliot-gould-60169b133/"
+    - name: email
+      title: Contact Me
+      url: "mailto:elliotgould1@gmail.com"
+
+menu:
+  main:
+    - identifier: home
+      name: Home 🏠
+      url: /
+      weight: 10
+    - identifier: posts
+      name: Posts 📜
+      url: /posts/
+      weight: 20
+    - identifier: tags
+      name: Tags 📌
+      url: /tags/
+      weight: 30
+    - name: Search 🔎
+      url: search/
+      weight: 40
